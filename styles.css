@@ -1,22 +1,165 @@
+/* Main */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+section {
+    margin-top: 3vh;
+}
+
+body {
+    overscroll-behavior-y: none;
+    font-family: Copperplate, Papyrus, fantasy;
 }
 
 html {
   overscroll-behavior-y: none;
+  background-image: url('https://i.ibb.co/GHnzTJr/6b83f81e8d51fd96d4f4f7d95b00dcfa.jpg');
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
-body {
-  background: url('Images/Background.jpg');
-  background-size: cover; 
-  background-position: fixed;
-  overflow-x: hidden;
-  height: 100%;
-  animation: moveBackground 4s linear infinite, stretchBackground 5s infinite alternate;
+img {
+    position: absolute;
+    border-radius: 15px;
+    border: solid 5px green;
 }
+
+/* Decorative Code */
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1200%;
+  background: url('https://i.ibb.co/GHnzTJr/6b83f81e8d51fd96d4f4f7d95b00dcfa.jpg') center center;
+  animation: moveBackground 10s linear infinite, stretchBackground 5s infinite alternate;
+}
+
+.container {
+  background: url('https://i.ibb.co/ccC2P8DP/nebula-stars-night-sky-abstract-600nw-2200196869.webp');
+  width: 80%;
+  height: 400%;
+  color: green;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-left: 40px;
+  position: relative;
+}
+
+.navbar {
+    border: 3px solid black;
+    border-bottom: none;
+    z-index: 500;
+    height: 14vh;
+    width: 80%; 
+    top: 0;
+    background-color: #00006c;
+    justify-content: space-between;
+    padding: 8px 4px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.navbar ul {
+    height: 100%;
+    list-style-type: none;
+    background-color: #00006c;
+    color: green;
+    display: flex;
+    font-size: 17px;
+}
+
+
+.navbar ul li {
+    margin-left: 4px;
+    border: 5px solid #000000;
+}
+
+
+.navbar ul li a {
+    display: block;
+    color:  green;
+    text-align: center;
+    align-content: center;
+    padding: 2px 3px;
+    text-decoration: none;
+    height: 100%;
+    transition: background-color 0.3s ease, color 0.3s linear;
+}
+
+
+.navbar ul li a:hover {
+    background-color:  #008000;
+    color: #000000
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5); 
+}
+
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #008000;
+    transition: width 1s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.header-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-image img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28vh;
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius: 0px;
+}
+
+.text {
+    margin-top: 28vh;
+    width: 40vw;
+}
+
+.images {
+    float: left;
+    width: 40vw;
+}
+
+/* Moving Elements */
 
 @keyframes moveBackground {
   0% {
@@ -27,40 +170,15 @@ body {
   }
 }
 
-html, body {
-  height: 100%;
-  font-family: 'Space Age', sans-serif;
-  color: black;
-}
 
-.nav {
-  background-color: #600505;
-  width: 80%;
-  z-index: 500;
-  height: 16%;
-  top: 0;
-  position: fixed;
-  top: 0;
-  width: 80%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.main {
-  width: 80%;
-  height: 100%;
-  border: 8px solid #000000;
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  position: relative;
-}
-
-.hero {
-  background: url('Images/Background2.jpg');
-  width: 100%;
-  height: 100%;
+@keyframes stretchBackground {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 150%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
