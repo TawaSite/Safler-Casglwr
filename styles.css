@@ -30,20 +30,6 @@ html {
   background-position: center;
 }
 
-
-html::before {
-      content: "";
-      position: fixed; 
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border: 8px solid black; 
-      pointer-events: none; 
-      box-sizing: border-box; 
-      z-index: 1000
-    }
-
 img {
     position: absolute;
     border-radius: 15px;
