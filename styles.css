@@ -12,38 +12,12 @@ html, body {
     width: 100%;
 }
 
-img {
-    position: absolute;
-    border-radius: 15px;
-    border: solid 5px #000000;
-}
-
-.hidden {
-    visibility: hidden;
-}
-    
 body {
     font-family: Copperplate, Papyrus, fantasy;
     background-image: url('https://i.ibb.co/GHnzTJr/6b83f81e8d51fd96d4f4f7d95b00dcfa.jpg');
     background-repeat: no-repeat;
     background-attatchment: fixed;
     background-size: cover;
-    height: 100vh;  
-}
-.container {
-    background: url('https://i.ibb.co/ccC2P8DP/nebula-stars-night-sky-abstract-600nw-2200196869.webp');
-    background-repeat: no-repeat;
-    background-attatchment: fixed;
-    background-size: cover;
-    border: 8px solid #000000;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: green;
-    padding: 40px; 
-    position: absolute;                    
-    text-align: center; 
-    width: 80vw;
-    float: center;
 }
 
 html {
@@ -68,8 +42,28 @@ html::before {
       z-index: 1000
     }
 
-body {
-  min-height: 100%;
+img {
+    position: absolute;
+    border-radius: 15px;
+    border: solid 5px green;
+}
+
+.container {
+  background: url('https://i.ibb.co/ccC2P8DP/nebula-stars-night-sky-abstract-600nw-2200196869.webp');
+  width: 80%;
+  height: 400%;
+  color: green;
+  background-repeat: no-repeat;
+  background-attatchment: fixed;
+  background-size: cover;
+  border: 8px solid #000000;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 40px;
+  position: relative;
 }
 
 .background {
@@ -81,11 +75,6 @@ body {
   background: url('https://i.ibb.co/GHnzTJr/6b83f81e8d51fd96d4f4f7d95b00dcfa.jpg') no-repeat center center;
   background-size: cover;
   animation: moveBackground 10s linear infinite, stretchBackground 5s infinite alternate;
-}
-
-.myGif {
-    margin-left: -100px;
-    repeat: repeat-y;
 }
 
 @keyframes moveBackground {
@@ -110,9 +99,6 @@ body {
   }
 }
 
-.responsive-img {
-    width: 65.4vw;
-  }
 
 h1 {
     position: absolute;
@@ -140,7 +126,7 @@ h1 {
 
 
 .navbar {
-    height: 12vh;
+    height: 14vh;
     width: 100%; 
     position: absolute;
     top: 0;
@@ -151,28 +137,22 @@ h1 {
     justify-content: space-between;
     padding: 10px 4px;
     border-bottom: 5px solid #000000; 
-    border-radius: 15px;
 }
 
 
 .navbar ul {
+    height: 100%;
     list-style-type: none;
-    margin-left: -4px;
-    overflow: hidden;
     background-color: #00006c;
     color: green;
     display: flex;
-    float: right;
     font-size: 17px;
 }
 
 
 .navbar ul li {
-    margin-top: 6vh;
-    float: center;
     margin-left: 4px;
     border: 5px solid #000000;
-    align-content: center;
 }
 
 
