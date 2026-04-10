@@ -13,7 +13,9 @@ html, body {
     padding: 0;
     width: 100%;
 }
-
+section {
+    margin-top: 3vh;
+}
 body {
     font-family: Copperplate, Papyrus, fantasy;
     background-image: url('https://i.ibb.co/GHnzTJr/6b83f81e8d51fd96d4f4f7d95b00dcfa.jpg');
@@ -56,12 +58,11 @@ img {
   background-attatchment: fixed;
   background-size: cover;
   border: 8px solid #000000;
-  border-radius: 8px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 40px;
+  padding-left: 40px;
   position: relative;
 }
 
@@ -69,13 +70,13 @@ img {
     z-index: 500;
     height: 14vh;
     width: 80%; 
-    position: fixed;
     top: 0;
     background-color: #00006c;
     justify-content: space-between;
-    padding: 4px 4px;
+    padding: 8px 4px;
     margin: 0 auto;
-    border-bottom: 5px solid #000000; 
+    box-sizing: border-box;
+    position: relative;
 }
 
 .navbar ul {
