@@ -18,8 +18,8 @@ html, body {
 
 img {
     position: absolute;
-    border-bottom: 5px solid #000000;
     border-radius: 15px;
+    border: solid 5px #000000;
 }
 
 .hidden {
