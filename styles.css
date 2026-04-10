@@ -19,7 +19,7 @@ section {
 
 body {
     overscroll-behavior-y: none;
-    font-family: Copperplate, Papyrus, fantasy;
+    font-family: "Papyrus", fantasy;
 }
 
 html {
@@ -87,7 +87,7 @@ img {
     background-color: #00006c;
     color: green;
     display: flex;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 
