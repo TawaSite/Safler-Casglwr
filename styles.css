@@ -61,13 +61,6 @@ img {
   animation: moveBackground 10s linear infinite, stretchBackground 5s infinite alternate;
 }
 
-h1 {
-    position: absolute;
-    width: 56%;
-    padding: 2px;
-    z-index: 1000;
-}
-
 .container {
   background: url('https://i.ibb.co/ccC2P8DP/nebula-stars-night-sky-abstract-600nw-2200196869.webp');
   width: 80%;
@@ -88,18 +81,15 @@ h1 {
 
 .navbar {
     height: 14vh;
-    width: 100%; 
-    position: absolute;
+    width: 80%; 
+    position: fixed;
     top: 0;
-    right: 0;
-    align-items: center;
     background-color: #00006c;
-    display: flex;
     justify-content: space-between;
-    padding: 10px 4px;
+    padding: 4px 4px;
+    margin: 0 auto;
     border-bottom: 5px solid #000000; 
 }
-
 
 .navbar ul {
     height: 100%;
@@ -152,6 +142,14 @@ h1 {
 
 .navbar ul li a:hover::after {
     width: 100%;
+}
+
+.text {
+    width: 40vw;
+}
+
+.images {
+    width: 40vw;
 }
 
 /* Moving Elements */
