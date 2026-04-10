@@ -59,8 +59,6 @@ body {
     flex-direction: column; 
     justify-content: center;
     margin: 0 auto;  
-    max-width: 1600px; 
-    min-height: 1000vh;  
     padding: 40px; 
     position: relative;                    
     text-align: center;  
@@ -111,7 +109,7 @@ html {
 }
 
 
-   html::before {
+html::before {
       content: "";
       position: fixed; 
       top: 0;
@@ -144,7 +142,6 @@ body {
     repeat: repeat-y;
 }
 
-/* Move background left to right */
 @keyframes moveBackground {
   0% {
     background-position: 0 0;
@@ -154,7 +151,7 @@ body {
   }
 }
 
-/* Stretch background from small to large and back */
+
 @keyframes stretchBackground {
   0% {
     background-size: 100%;
@@ -171,19 +168,18 @@ body {
     width: 65.4vw;
   }
 
-  /* Example: Custom styles for small screens */
+
   @media (max-width: 600px) {
   responsive-img {
-      width: 80%;  /* Set image width to 80% of the container */
+      width: 80%;  
       display: block;
-      margin: 0 auto;  /* Center the image */
+      margin: 0 auto; 
     }
   }
 
-  /* Example: Custom styles for large screens */
   @media (min-width: 1200px) {
  responsive-img{
-      width: 50%;  /* Set image width to 50% of the container */
+      width: 50%;
     }
   }
 
@@ -215,10 +211,8 @@ h1 {
   flex: 0.35;
 }
 
-/* Navbar attempt 1 */
 
 .navbar {
-    margin-top: 3360px;
     height: 12vh;
     width: 100%; 
     position: absolute;
@@ -271,9 +265,9 @@ h1 {
     background-color:  #008000;
     color: #000000;
     border-radius: 15px;
-    transform: scale(1.1);  /* Slightly enlarge */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Add shadow for depth */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);  /* Glowing text effect */
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5); 
 }
 
 
@@ -285,9 +279,9 @@ h1 {
     width: 0;
     height: 2px;
     background-color: #008000;
-    transition: width 1s ease-in-out; /* Sliding underline */
+    transition: width 1s ease-in-out;
 }
 
 .navbar ul li a:hover::after {
-    width: 100%;  /* Underline slides in */
+    width: 100%;
 }
