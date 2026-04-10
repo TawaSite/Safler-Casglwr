@@ -66,6 +66,7 @@ img {
 }
 
 .navbar {
+    z-index: 500;
     height: 14vh;
     width: 80%; 
     position: fixed;
