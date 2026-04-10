@@ -70,25 +70,6 @@ body {
     font-size: 1rem;
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 85%;          
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        width: 75%;           
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 100%;     
-        max-width: 1600px;
-    }
-}
-
 .viewport-border {
     position: fixed;
     top: 0;
@@ -168,25 +149,6 @@ body {
 .responsive-img {
     width: 65.4vw;
   }
-
-
-  @media (max-width: 600px) {
-  responsive-img {
-      width: 80%;  
-      display: block;
-      margin: 0 auto; 
-    }
-  }
-
-  @media (min-width: 1200px) {
- responsive-img{
-      width: 50%;
-    }
-  }
-
-div {
-    width: 60vw;
-}
 
 h1 {
     position: absolute;
