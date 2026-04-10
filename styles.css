@@ -10,10 +10,6 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
 }
 
 img {
@@ -33,22 +29,9 @@ body {
     background-attatchment: fixed;
     background-size: cover;
     height: 100vh;  
-    flex-direction: column; 
-    justify-content: flex-start;
 }
-
-.image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; 
-    height: 100vh; 
-    overflow: hidden; 
-}
-    
 .container {
-    align-items: center;
-    background-image: url('https://i.ibb.co/ccC2P8DP/nebula-stars-night-sky-abstract-600nw-2200196869.webp');
+    background: url('https://i.ibb.co/ccC2P8DP/nebula-stars-night-sky-abstract-600nw-2200196869.webp');
     background-repeat: no-repeat;
     background-attatchment: fixed;
     background-size: cover;
@@ -56,30 +39,11 @@ body {
     border-radius: 8px;
     box-sizing: border-box;
     color: green;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    margin: 0 auto;  
     padding: 40px; 
-    position: relative;                    
-    text-align: center;  
-    width: 100%;
-}
-
-.content {
-    font-size: 1rem;
-}
-
-.viewport-border {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10000;
-    border: 8px solid black; 
-    pointer-events: none;
-    width: 0;   
+    position: absolute;                    
+    text-align: center; 
+    width: 80vw;
+    float: center;
 }
 
 html {
